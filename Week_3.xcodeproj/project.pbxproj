@@ -22,6 +22,7 @@
 		BF79D0B6271339C60068BA61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D0B2271339C60068BA61 /* BaseViewController.swift */; };
 		BF79D0B7271339C60068BA61 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D0B3271339C60068BA61 /* GenericBaseView.swift */; };
 		BF79D0B8271339C60068BA61 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D0B4271339C60068BA61 /* BaseView.swift */; };
+		BF79D0BA27133F4B0068BA61 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D0B927133F4B0068BA61 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BF79D0B2271339C60068BA61 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BF79D0B3271339C60068BA61 /* GenericBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
 		BF79D0B4271339C60068BA61 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BF79D0B927133F4B0068BA61 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				BF79D07F27132EC40068BA61 /* Assets.xcassets */,
 				BF79D08127132EC40068BA61 /* LaunchScreen.storyboard */,
 				BF79D08427132EC40068BA61 /* Info.plist */,
+				BF79D0B927133F4B0068BA61 /* TestViewController.swift */,
 			);
 			path = Week_3;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				BF79D07B27132EC10068BA61 /* ViewController.swift in Sources */,
 				BF79D07727132EC10068BA61 /* AppDelegate.swift in Sources */,
+				BF79D0BA27133F4B0068BA61 /* TestViewController.swift in Sources */,
 				BF79D07927132EC10068BA61 /* SceneDelegate.swift in Sources */,
 				BF79D0A9271332E50068BA61 /* MainViewModel.swift in Sources */,
 				BF79D0AB271333320068BA61 /* MainViewController.swift in Sources */,

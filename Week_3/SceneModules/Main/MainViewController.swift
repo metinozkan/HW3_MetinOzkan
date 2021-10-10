@@ -41,6 +41,7 @@ class MainViewController:BaseViewController<MainViewModel>{
     
     @objc func testButtonAction(_ sender: UIButton) {
         print("click")
-         
+        let testViewController = TestViewController()
+        self.navigationController?.pushViewController(testViewController, animated: true)
     }
 }
