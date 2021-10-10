@@ -27,7 +27,7 @@ class MainViewController:BaseViewController<MainViewModel>{
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
          
-    
+        view.backgroundColor = .green
         view.addSubview(test)
         
         NSLayoutConstraint.activate(
@@ -37,11 +37,14 @@ class MainViewController:BaseViewController<MainViewModel>{
         ])
         
     }
-    
+      
     
     @objc func testButtonAction(_ sender: UIButton) {
         print("click")
         let testViewController = TestViewController()
-        self.navigationController?.pushViewController(testViewController, animated: true)
+//        self.navigationController?.pushViewController(testViewController, animated: true)
+        
+        let newNavController = UINavigationController(rootViewController: testViewController)
+        self.present(newNavController, animated: true, completion:nil  )
     }
 }

@@ -15,10 +15,14 @@ class MainViewBuilder {
         
         
         let viewModel = MainViewModel()
-        
         let viewController = MainViewController(viewModel: viewModel)
+        let navigationViewController = UINavigationController(rootViewController: viewController)
         
-        return viewController
+        viewController.title = "Main"
+        viewController.tabBarItem.image = TabBarImages.home.value
+        viewController.tabBarItem.selectedImage = TabBarImages.homeSelected.value
+        
+        return navigationViewController
     }
     
 }
