@@ -37,14 +37,27 @@ class MainViewController:BaseViewController<MainViewModel>{
         ])
         
     }
-      
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+       }
+       
     
     @objc func testButtonAction(_ sender: UIButton) {
-        print("click")
-        let testViewController = TestViewController()
-//        self.navigationController?.pushViewController(testViewController, animated: true)
+        fireCharacterListView()
+//        print("click")
+//        let testViewController = TestViewController()
+////        self.navigationController?.pushViewController(testViewController, animated: true)
+//
+//        let newNavController = UINavigationController(rootViewController: testViewController)
+//        self.present(newNavController, animated: true, completion:nil  )
+    }
+    
+    
+    private func fireCharacterListView () {
         
-        let newNavController = UINavigationController(rootViewController: testViewController)
-        self.present(newNavController, animated: true, completion:nil  )
+        let characterListView = CharacterListViewBuilder.build()
+        
+        self.navigationController?.pushViewController(characterListView, animated: true)
     }
 }
