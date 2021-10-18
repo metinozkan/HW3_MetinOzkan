@@ -29,16 +29,21 @@ class ItemTableViewCell:BaseTableViewCell  {
             return temp
         }()
         
-        private lazy var imageViewComponent: CustomImageViewComponent = {
-            let temp = CustomImageViewComponent()
+        private lazy var imageViewComponent: CustomImageViewComponentContainer = {
+            let temp = CustomImageViewComponentContainer()
             temp.translatesAutoresizingMaskIntoConstraints = false
             temp.heightAnchor.constraint(equalToConstant: 50).isActive = true
             temp.widthAnchor.constraint(equalToConstant: 50).isActive = true
+            temp.layer.cornerRadius = 4
+            temp.layer.shadowColor = UIColor.black.cgColor
+            temp.layer.shadowOffset = CGSize(width: 0, height: 2)
+            temp.layer.shadowRadius = 4
+            temp.layer.shadowOpacity = 0.6
             return temp
         }()
         
         private lazy var cellInfo: LabelPackComponent = {
-            let temp = LabelPackComponent()
+            let temp = LabelPackComponent(data:getLabelPackComponentData())
             temp.translatesAutoresizingMaskIntoConstraints = false
             return temp
         }()
@@ -76,10 +81,20 @@ class ItemTableViewCell:BaseTableViewCell  {
         
         func setData(by value: GenericDataProtocol) {
             guard let data = value as? ItemTableViewCellData   else { return }
-            imageViewComponent.setData(componentData: data.imageData)
+            imageViewComponent.setData(by: data.imageData)
             cellInfo.setData(by: data.cellInfo)
         }
             
+    
+    
+    private func getLabelPackComponentData() ->LabelPackComponentData {
+        
+        return LabelPackComponentData()
+            .setContentMode(by: .left)
+            .setTextAlignment(by: .left)
+            .setNumberOfLines(by: 2)
+            .setLineBreakMode(by: .byTruncatingTail)
+    }
     
      
 }
