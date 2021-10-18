@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3DC47D271D876F0053B8E7 /* CharacterListDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DC47C271D876F0053B8E7 /* CharacterListDataFormatter.swift */; };
+		BF3DC47F271D878E0053B8E7 /* CharacterListDataFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DC47E271D878E0053B8E7 /* CharacterListDataFormatterProtocol.swift */; };
 		BF79D07727132EC10068BA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D07627132EC10068BA61 /* AppDelegate.swift */; };
 		BF79D07927132EC10068BA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D07827132EC10068BA61 /* SceneDelegate.swift */; };
 		BF79D07B27132EC10068BA61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79D07A27132EC10068BA61 /* ViewController.swift */; };
@@ -71,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF3DC47C271D876F0053B8E7 /* CharacterListDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataFormatter.swift; sourceTree = "<group>"; };
+		BF3DC47E271D878E0053B8E7 /* CharacterListDataFormatterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataFormatterProtocol.swift; sourceTree = "<group>"; };
 		BF79D07327132EC10068BA61 /* Week_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF79D07627132EC10068BA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF79D07827132EC10068BA61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 				BF79D0D7271362CA0068BA61 /* CharacterListViewBuilder.swift */,
 				BF79D0D9271362DD0068BA61 /* CharacterListViewModel.swift */,
 				BFAB7E2627160DDF003B57E6 /* CharacterListViewState.swift */,
+				BF3DC47C271D876F0053B8E7 /* CharacterListDataFormatter.swift */,
+				BF3DC47E271D878E0053B8E7 /* CharacterListDataFormatterProtocol.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -550,11 +556,13 @@
 				BF79D0AB271333320068BA61 /* MainViewController.swift in Sources */,
 				BF79D0B7271339C60068BA61 /* GenericBaseView.swift in Sources */,
 				BF79D0B6271339C60068BA61 /* BaseViewController.swift in Sources */,
+				BF3DC47D271D876F0053B8E7 /* CharacterListDataFormatter.swift in Sources */,
 				BF79D0B8271339C60068BA61 /* BaseView.swift in Sources */,
 				BFAB7E142715EFE3003B57E6 /* CustomImageLoadingType.swift in Sources */,
 				BFAB7E012715ED6D003B57E6 /* GenericDataProtocol.swift in Sources */,
 				BF79D0AD2713333A0068BA61 /* MainViewBuilder.swift in Sources */,
 				BFAB7E112715EFE3003B57E6 /* CustomImageViewComponentContainer.swift in Sources */,
+				BF3DC47F271D878E0053B8E7 /* CharacterListDataFormatterProtocol.swift in Sources */,
 				BF79D0C927134C8C0068BA61 /* FavoriteViewModel.swift in Sources */,
 				BFAB7E172715F03E003B57E6 /* FontManager.swift in Sources */,
 				BF79D0B5271339C60068BA61 /* GenericValueProtocol.swift in Sources */,

@@ -52,7 +52,11 @@ class ItemListView: BaseView {
     
     
     func reloadTableView(){
-        tableView.reloadData()
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+        
     }
 }
 

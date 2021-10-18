@@ -50,11 +50,17 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
               switch state {
               case .done:
                   print("Data is ready.")
+                  self?.mainComponent.reloadTableView()
               case .loading:
                   print("Data is getting.")
+                
+              case .failure:
+              print("errror.")
               }
+            
           }
-      }
+          }
+      
       
 }
 
